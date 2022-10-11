@@ -1,0 +1,454 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'assw';
+    src: url('D:\Daily\Latihan HTML\font\BebasNeue-Regular.woff') format('woff');
+}
+
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'assw', sans-serif ;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/food.png);
+    width: 100%;
+    
+}
+.wrapper {
+    width: 1200px;
+    position:relative;
+    margin: auto;
+    
+    
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    padding-left: 30px;
+    font-family: 'Courier New', Courier;
+}
+.menu{
+  float:right;
+  margin-right:10%;
+}
+
+nav{
+    width:100%;
+    margin:auto;
+    line-height: 80px;
+    position: fixed;
+    z-index: 9999;
+    position: -webkit-sticky;
+    top : 0;
+    background: #ffffff;
+    
+}
+nav ul{
+    list-style-type: none;
+    margin:0px;
+    padding:0;
+    overflow: hidden;
+    
+
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 80px; 
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+
+section {
+    display: flex;
+    padding-top: 100px;
+    
+    
+    
+}
+section img{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+.kolom{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    
+    
+  
+}
+.kolom .deskripsi{
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color:black;
+}
+h2{
+    font-family: 'comic sans ms';
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom :20px;
+    margin-top: 20px;
+    color: black;
+    width: 100%;
+    line-height: 100%;
+}
+.kolom p{
+    font-weight: 1000;
+
+}
+.kolom a{
+    display: block;
+    background: rgb(247, 247, 247);
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 20px;
+
+}
+.containert .fotonya .des a:hover{
+
+    
+    text-decoration: underline;
+}
+.containert{
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 120px;
+    
+}
+.containert h1{
+    text-align: center;
+    padding: 20px;
+    font-weight:bold;
+    font-size: 30px;
+    color: gray;
+}
+.fotonya{
+    width: 100%;
+   
+    
+}
+
+.kartu-foto{
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    
+}
+.kartu-foto a{
+    width: 100%;
+   
+    display: flex;
+}
+
+.kartu-foto img{
+    width: 60%;
+    border-radius: 50%;
+    margin-left: 59px;
+    border: 7px solid rgb(255, 255, 255);
+    z-index: 2;
+    transition: all 1s ;
+    
+    
+}
+.kartu-foto img:hover{
+    transform: scale(1.5) rotatey(180deg);
+    filter: grayscale(200%);
+  
+}
+
+.des{
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+   
+    
+
+}
+.des p{
+    width: 200px;
+    margin-left: 59px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 10px;
+    color: #ffffff;
+    position: relative;
+    border:5px solid #ffffff;
+  
+
+}
+
+.des p a{
+    color: #ffffff;
+
+}
+
+.des p img{
+    width: 19%;
+    position:absolute;
+    top: -40px;
+    left: -40px;
+    border-radius: 50%;
+    border:5px solid #ffffff;
+    background-color: whitesmoke;
+    
+    
+}
+.container{
+    width: 60%;
+    margin-top: 0px;
+    padding-bottom: 200px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 200px;
+
+}
+.container img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+
+}
+.container h1{
+    font-size: 30px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.container ul{
+    margin-top:  30px;
+}
+
+.container ul li{
+    list-style-type: disc;
+    margin-left: 36px;
+    
+    
+
+}
+.garis{
+    width: 100%;
+    border-left: 2px solid black;
+    height: 100px;
+    margin-left: 21px;
+}
+
+.aside{
+    width: 30%;
+    background-color: rgb(210, 7, 7);
+    margin-left: 20px;
+    height: 920px;;
+    border-radius: 10px;
+}
+.aside h1{
+    color: #fefefe;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Lato, arial, sans-serif;
+    
+}
+
+.aside .yt{
+    width: 14%;
+    box-shadow: 0 5px 5px 2px black;
+    border-radius: 20%;
+    position: relative;
+    top: 10px;
+    right: 0px;
+}
+.aside ul li {
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.aside ul iframe{
+    width: 90%;
+    margin: 10px 15px;
+    background-color: black;
+    border: 5px solid wheat;
+    transition: all .5s;
+}
+
+.aside ul iframe:hover{
+    transform:scale(1.2) ;
+  
+}
+.aside p{
+    text-align: center;
+    margin-top: 160px;
+}
+
+.sertif{
+    width: 100%;
+    background-color: #ffffff;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.hser{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    position:absolute;
+
+}
+
+.galeri li{
+
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    border: 5px solid black;
+    float: left;
+    margin: 20px 65px;
+    position: relative;
+    transition: 1s;
+   
+    
+   
+}
+.galeri li img{
+    border-radius: 50%;
+    height: 100%;
+    width:  100%;
+    margin: 0;
+    transition: 1.5s;
+    
+
+  
+    
+}
+
+.galeri li a:hover img{
+    transform: scale(1.5);
+}
+.galeri li span{
+    background-color: rgba(101, 99, 99,.5);
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width:  100%;
+    text-align: center;
+    line-height: 240px;
+    position: absolute;
+    top:0;
+    color: black;
+    opacity: 0;
+    scale: 0;
+    transition: 1.5s;
+   
+}
+
+
+.galeri li a:hover span{   
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0);
+    z-index: 999999;
+    transition: 1s;
+    
+}
+.overlay:target{
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.8);
+}
+
+
+.clear{
+    clear: both;
+}
+
+
